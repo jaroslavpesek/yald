@@ -1,0 +1,165 @@
+\documentclass[a4paper,conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+
+\input{packages.tex}
+\input{acronyms.tex}
+
+% Biber package
+\usepackage[
+    citestyle=numeric-comp,
+    bibstyle=ieee,
+    minbibnames=1,
+    maxbibnames=1,
+    defernumbers=false,
+    giveninits,
+    backend=biber,
+]{biblatex}
+\addbibresource{references/references.bib}
+
+
+\title{Enhancing Cybersecurity: Technologies in Applied Network Security}
+
+\input{authors.tex}
+
+\begin{document}
+\maketitle
+\input{abstract.tex}
+
+\section{Introduction}
+
+In the digital age, the significance of network security cannot be overstated.
+As organizations increasingly rely on interconnected systems for operations, the need to safeguard data from unauthorized access, disruptions, or malicious attacks becomes paramount.
+Network security encompasses a wide range of practices designed to protect the integrity, confidentiality, and availability of computer networks and data using both software and hardware technologies.
+Every organization, regardless of size, industry, or infrastructure, requires a robust network security system to shield against the ever-evolving landscape of cyber threats.
+
+This paper aims to explore the fundamental aspects of network security, examining its key components, and the latest methodologies employed to prevent, detect, and mitigate security incidents.
+Through a comprehensive analysis of current security challenges and the deployment of advanced defensive mechanisms, the paper seeks to provide insights into effective strategies for enhancing security postures and fostering a secure cyber environment.
+By delving into various case studies and real-world applications, the paper will illustrate the critical role of network security in protecting information assets while supporting the continuity and efficiency of organizational operations.
+
+\SI{1024}{\byte} is equal to \SI{1}{\kilo\byte}. The speed of the network is \SI{1}{\giga\bit\per\second} which is equivalent to \SI{1}{\gbps}.
+
+\section{Related Work}
+
+This section reviews the current literature on network security, highlighting the primary research areas and the technological advancements made in the field.
+The discussion is divided into two subsections, focusing on defensive strategies and technological innovations, respectively.
+
+\subsection{Defensive Strategies in Network Security}
+
+Recent studies in network security emphasize the importance of a layered defense approach, incorporating multiple security measures to protect against various types of cyber threats. 
+Discuss the efficacy of firewalls and \glsxtrfull{ids} as first-line defenses. 
+Meanwhile, \cite{antonelloDeepPacketInspection2012a} explores the integration of behavioral analytics into security protocols to identify potential breaches before they cause significant damage.
+This body of work suggests that a comprehensive security strategy, combining traditional methods with advanced analytics, is essential for robust protection.
+
+\subsection{Technological Innovations in Network Security}
+
+The second focal area of current research is the development and implementation of new technologies to bolster network security. Blockchain technology, for instance, has been explored by Brown and Zhao \cite{auldBayesianNeuralNetworks2007} for its potential to enhance data integrity and prevent unauthorized access. Additionally, \gls{ai} and \gls{ml} are increasingly employed to automate threat detection and response, as reviewed by Green et al. \cite{shajiMethodologicalReviewAttack2019}. These technological advancements not only improve security measures but also increase the efficiency and effectiveness of responses to security incidents.
+
+\section{Methods}
+
+This section outlines the methodologies used to evaluate the effectiveness of network security strategies discussed in this paper.
+The primary methods include simulation of cyber attacks, quantitative analysis of security breaches, and performance evaluation of various security tools.
+
+\subsection{Simulation of Cyber Attacks}
+
+We simulate cyber attacks to test the resilience of network security systems.
+The simulation process is governed by the equation:
+\begin{equation}
+\text{Attack\_Strength} = \frac{\text{Number\_of\_Attacks} \times \text{Success\_Rate}}{\text{Network\_Size}}
+\end{equation}
+This equation helps in understanding the potential impact of various attack vectors on different network scales.
+
+\subsection{Quantitative Analysis of Security Breaches}
+
+Quantitative analysis involves statistical evaluation of past security breaches.
+We calculate the frequency of breaches using the formula:
+\begin{equation}
+\text{Breach\_Frequency} = \frac{\text{Total\_Breaches}}{\text{Observation\_Period}}
+\end{equation}
+This metric assists in identifying patterns and trends that could inform future security measures.
+Yes.
+
+
+\subsection{Performance Evaluation}
+
+The performance of security tools is crucial for effective network security.
+We assess tool efficacy using the following performance index:
+\begin{equation}
+\text{Performance\_Index} = \frac{\text{Successful\_Blocks}}{\text{Attempts}}
+\end{equation}
+This index provides a measure of how effectively a security tool prevents unauthorized access.
+
+\subsection{Results and Discussion}
+
+The results of our methods are summarized in Table \ref{tbl:mytable} and Table \ref{tbl:mytable2}.
+These tables provide a comparative overview of different security strategies.
+
+\begin{table*}
+    \centering
+    \caption{This is my table, there are many like it, but this one is mine.}
+    \label{tbl:mytable}
+    \begin{tabular}{llr}
+    \toprule
+    \multicolumn{2}{c}{Item} \\
+    \cmidrule(r){1-2}
+    Animal & Description & Price (\$) \\
+    \midrule
+    Gnat  & per gram & 13.65 \\
+          & each     &  0.01 \\
+    Gnu   & stuffed  & 92.50 \\
+    Emu   & stuffed  & 33.33 \\
+    Armadillo & frozen & 8.99 \\
+    \bottomrule
+    \end{tabular}
+\end{table*}
+    
+
+\lipsum[8]
+
+\begin{table}
+    \centering
+    \caption{This is my table, there are many like it, but this one is mine.}
+    \label{tbl:mytable2}
+    \begin{tabular}{llr}
+    \toprule
+    \multicolumn{2}{c}{Item} \\
+    \cmidrule(r){1-2}
+    Animal & Description & Price (\$) \\
+    \midrule
+    Gnat  & per gram & 13.65 \\
+          & each     &  0.01 \\
+    Gnu   & stuffed  & 92.50 \\
+    Emu   & stuffed  & 33.33 \\
+    Armadillo & frozen & 8.99 \\
+    \bottomrule
+    \end{tabular}
+\end{table}
+    
+
+\section{Results}
+
+\lipsum[3]
+
+\begin{figure*}
+    \centering
+    \includegraphics[width=\textwidth]{img/felixdada.jpg}
+    \caption{Felix a Dada}
+    \label{fig:attack_success_rate2}
+\end{figure*}
+
+\lipsum[3]
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.45\textwidth]{img/felixdada.jpg}
+    \caption{Felix a Dada}
+    \label{fig:attack_success_rate}
+\end{figure}
+
+\lipsum[1-10]
+
+
+\printbibliography
+
+
+\end{document}

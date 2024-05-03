@@ -1,0 +1,27 @@
+
+\usepackage{lipsum}                         % Generates filler text
+\usepackage{graphicx}                       % For images
+\usepackage{booktabs}                       % Nicer tables
+\usepackage[acronym,toc,symbols]{glossaries-extra} % For acronyms
+
+\usepackage[
+    protrusion=true,
+    activate={true,nocompatibility},
+    final,
+    tracking=true,
+    kerning=true,
+    spacing=true,
+    factor=1100]{microtype}
+\SetTracking{encoding={*}, shape=sc}{40}   % Increase tracking of small caps
+
+\usepackage{pgfplots}                      % For plots
+\pgfplotsset{compat=1.18}                   % Set compatibility to latest version
+
+\usepackage{siunitx}                       % For units
+\DeclareSIUnit\gbps{Gbps}
+
+
+\usepackage{cleveref}                      % For clever references
+\usepackage{tikz}                          % For drawings
+\usepackage{algorithm}                     % For algorithms
+

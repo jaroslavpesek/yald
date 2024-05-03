@@ -1,0 +1,84 @@
+{
+    "name": "LaTeXdevcontainer",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "mounts": ["source=${localWorkspaceFolder},target=/data,type=bind"],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "znck.grammarly",
+                "James-Yu.latex-workshop",
+                "ms-vsliveshare.vsliveshare"
+                // "vscodevim.vim" :)))))))))
+            ],
+            "settings": {
+                // Latex Workshop settings
+                "latex-workshop.view.pdf.viewer": "tab",
+                "latex-workshop.latex.autoBuild.run": "never",
+                "latex-workshop.latex.tools": [
+                    {
+                        "name": "latexmk",
+                        "command": "latexmk",
+                        "args": [
+                            "-pdf",
+                            "-synctex=1",
+                            "-interaction=nonstopmode",
+                            "-file-line-error",
+                            "-outdir=%OUTDIR%",
+                            "%DOC%"
+                        ],
+                        "env": {}
+                    }
+                ],
+                "latex-workshop.latex.recipes": [
+                    {
+                        "name": "latexmk",
+                        "tools": [
+                            "latexmk"
+                        ]
+                    }
+                ],
+                // Grammarly settings
+                "grammarly.files.include": [
+                    "**/*.tex"
+                ],
+                "grammarly.config.documentDialect": "american",
+                "grammarly.config.documentDomain": "academic",
+                "grammarly.config.suggestionCategories.fluency": "on",
+                "grammarly.config.suggestionCategories.conjugationAtStartOfSentence": "on",
+                "grammarly.config.suggestionCategories.informalPronounsAcademic": "on",
+                "grammarly.config.suggestionCategories.missingSpaces": "on",
+                "grammarly.config.suggestionCategories.passiveVoice": "off",
+                "grammarly.config.suggestionCategories.redundantPhrases": "on",
+                "grammarly.config.suggestionCategories.repeatedWords": "on",
+                "grammarly.config.suggestionCategories.wordySentences": "on",
+                "grammarly.config.suggestionCategories.vocabulary": "on",
+                "grammarly.config.suggestionCategories.nounStrings": "on",
+                "grammarly.config.suggestionCategories.numbersBeginningSentences": "on",
+                "grammarly.config.suggestionCategories.numbersZeroThroughTen": "on",
+                "grammarly.config.suggestionCategories.oxfordComma": "off",
+                "grammarly.config.suggestionCategories.prepositionAtTheEndOfSentence": "on",
+                "grammarly.config.suggestionCategories.punctuationWithQuotation": "on",
+                "grammarly.config.suggestionCategories.readabilityFillerWords": "on",
+                "grammarly.config.suggestionCategories.readabilityTransforms": "on",
+                "grammarly.config.suggestionCategories.sentenceVariety": "on",
+                "grammarly.config.suggestionCategories.spacesSurroundingSlash": "on",
+                "grammarly.config.suggestionCategories.splitInfinitive": "on",
+                "grammarly.config.suggestionCategories.stylisticFragments": "on",
+                "grammarly.config.suggestionCategories.unnecessaryEllipses": "on",
+                "grammarly.config.suggestionCategories.variety": "on",
+                "grammarly.config.suggestionCategories.personFirstLanguage": "off",
+                "grammarly.config.suggestionCategories.possiblyBiasedLanguageAgeRelated": "on",
+                "grammarly.config.suggestionCategories.possiblyBiasedLanguageGenderRelated": "on",
+                "grammarly.config.suggestionCategories.possiblyBiasedLanguageDisabilityRelated": "on",
+                "grammarly.config.suggestionCategories.possiblyBiasedLanguageFamilyRelated": "on",
+                "grammarly.config.suggestionCategories.possiblyBiasedLanguageHumanRights": "on",
+                "grammarly.config.suggestionCategories.possiblyBiasedLanguageHumanRightsRelated": "on",
+                "grammarly.config.suggestionCategories.possiblyBiasedLanguageLGBTQIARelated": "on",
+                "grammarly.config.suggestionCategories.possiblyBiasedLanguageRaceEthnicityRelated": "on",
+                "grammarly.config.suggestionCategories.possiblyPoliticallyIncorrectLanguage": "on"
+            }
+        }
+    }
+}
